@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-checkout: rgb(255, 166, 0);
 }
 html {
   font-size: 62.5%;
@@ -13,6 +14,10 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 h1,
 h2,
@@ -48,6 +53,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 .link-arrow {
   color: var(--color-accent);
@@ -115,4 +121,53 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+.select {
+  border-radius: 10px;
+  background: lightblue;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+.select .btn {
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  width: 200px;
+}
+.btn-outline {
+  background: var(--color-headings);
+  border: 1px solid #ced4da;
+  color: #fff;
+  cursor: pointer;
+  transition: border 1.15s, box-shadow 1.15s;
+}
+.btn-outline:hover,
+.btn-secondary:hover,
+.btn-full:hover,
+.btn-final:hover {
+  border: 1px solid #86b7fe;
+  box-shadow: 0 0 0 5px rgb(92, 173, 255);
+}
+.btn-secondary {
+  border: 1px solid #ced4da;
+
+  background: var(--color-secondary);
+}
+.btn-full {
+  border: 1px solid #ced4da;
+  background: var(--color-primary);
+}
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 1.5rem;
+}
+.btn-final {
+  border: 1px solid #ced4da;
+  background: var(--color-checkout);
 }
