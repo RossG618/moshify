@@ -9,7 +9,7 @@
   --color-border: #ccc;
   --border-radius: 30px;
 }
-/*ced4da light grey*/
+/*#ced4da light grey*/
 html {
   font-size: 62.5%;
 }
@@ -136,7 +136,7 @@ a {
   text-align: center;
   width: 100%;
 }
-.btn {
+.select .btn {
   border-radius: 30px;
   color: var(--color-headings);
   font-size: 1.5rem;
@@ -144,8 +144,6 @@ a {
   margin: 1rem;
   padding: 1.5rem 3rem;
   width: 50%;
-  text-transform: uppercase;
-  text-align: center;
 }
 .btn-outline {
   background: #fff;
@@ -169,11 +167,6 @@ a {
 }
 .btn--secondary {
   background: var(--color-secondary);
-  color: #fff;
-}
-.btn--stretched {
-  padding-left: 6rem;
-  padding-right: 6rem;
 }
 .btn-full {
   border: 1px solid #ced4da;
@@ -385,28 +378,4 @@ blockquote {
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
-}
-.callout__heading {
-  color: #fff;
-  margin: 0;
-  font-size: 3rem;
-}
-.callout .btn {
-  justify-self: center;
-  align-self: center;
-}
-.callout__content {
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .callout .grid--1x2 {
-    grid-template-columns: 1fr, auto;
-  }
-  .callout__content {
-    text-align: left;
-  }
-  .callout .btn {
-    justify-self: start;
-    margin: 0 2rem;
-  }
 }
