@@ -488,7 +488,7 @@ blockquote {
 }
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
-    grid-template-columns: 1fr, auto;
+    grid-template-columns: 1fr auto;
   }
   .callout__content {
     text-align: left;
